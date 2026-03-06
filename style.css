@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+/* ============ GLOBAL ============ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Inputs */
+select,
+input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px;
+  margin: 10px auto 0 auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+/* ============ CONTAINER ============ */
+.container {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  width: 95%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* ============ LOGOS (if you still use them) ============ */
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.logo-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ============ BUTTONS ============ */
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-container {
+  margin-top: 25px;
+}
+
+.btn-retour {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #4a6b2c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+  border: none;
+}
+.btn-retour:hover {
+  background-color: #2f471b;
+}
+
+.btn-retour-rouge {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #c0392b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+  border: none;
+}
+.btn-retour-rouge:hover,
+.btn-retour-rouge:active,
+.btn-retour-rouge:focus {
+  background-color: #e74c3c;
+  outline: none;
+}
+
+/* PDF button */
+.btn-pdf {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ============ NOTE BOX ============ */
+.note {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  margin: 15px auto 20px auto;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  width: 90%;
+  max-width: 900px;
+  text-align: left;
+}
+.note strong {
+  color: #d9534f;
+}
+
+/* ============ ACCORDION / RUBRIQUES ============ */
+.accordion {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.rubrique-header {
+  background: #4a6b2c;
+  color: white;
+  padding: 12px;
+  margin: 15px auto 8px auto;
+  width: 90%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+.rubrique1-header {
+  background: #c12323;
+  color: white;
+  padding: 12px;
+  margin: 15px auto 8px auto;
+  width: 90%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+.rubrique-table-wrapper {
+  width: 95%;
+  margin: 0 auto 25px auto;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* ============ TABLE (questions) ============ */
+.questions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ lignes verticales et horizontales */
+.questions-table th,
+.questions-table td {
+  border: 1px solid #ccc;   /* lignes entre colonnes et lignes */
+  padding: 12px;
+}
+
+/* ✅ header vert */
+.questions-table th {
+  background-color: #4CAF50;  /* vert */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* optionnel : alignement */
+.questions-table td:nth-child(1) {
+  text-align: left;
+}
+
+.questions-table td:nth-child(2),
+.questions-table td:nth-child(3),
+.questions-table td:nth-child(4) {
+  text-align: center;
+}
+
+/* hover */
+.questions-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* ✅ row complete = green */
+.row-complete td {
+  background: #d7f5d7 !important;
+}
+.user-box {
+  margin: 15px auto;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.user-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 70%;
+  max-width: 320px;
+}
+
+.error { color: #c0392b; }
+.success { color: #2e7d32; }
+
+.questions-table th:nth-child(2),
+.questions-table td:nth-child(2) {
+  width: 180px;
+}
+.questions-table th:nth-child(3),
+.questions-table td:nth-child(3) {
+  width: 300px;
+}
+.questions-table input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  label,
+  p,
+  button,
+  input,
+  select,
+  textarea,
+  td,
+  th {
+    font-size: 16px;
+  }
+
+  .user-box {
+    width: 95%;
+  }
+
+  .user-box input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  select,
+  input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .questions-table th:nth-child(2),
+  .questions-table td:nth-child(2),
+  .questions-table th:nth-child(3),
+  .questions-table td:nth-child(3) {
+    width: auto;
+  }
+
+  .rubrique-table-wrapper {
+    overflow-x: auto;
+  }
+}
